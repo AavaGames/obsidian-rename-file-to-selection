@@ -1,0 +1,11 @@
+{
+	"id": "obsidian-rename-to-selection",
+	"name": "Rename to Selection",
+	"version": "0.0.1",
+	"minAppVersion": "0.15.0",
+	"description": "Rename your file or first header to the current text selection.",
+	"author": "Philip Fertsman",
+	"authorUrl": "https://aavagames.itch.io/",
+	"fundingUrl": "https://aavagames.itch.io/",
+	"isDesktopOnly": false
+}
