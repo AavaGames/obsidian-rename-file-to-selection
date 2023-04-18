@@ -1,4 +1,5 @@
 import { App, Editor, MarkdownView, Modal, Notice, Plugin, PluginSettingTab, Setting } from 'obsidian';
+import { sanitize } from "sanitize-filename-ts";
 
 // Remember to rename these classes and interfaces!
 
@@ -17,15 +18,29 @@ export default class RenameToSelectionPlugin extends Plugin {
 		await this.loadSettings();
 
 		this.addRibbonIcon('dice', 'Sample Plugin', () => {
-			new Notice('This is a notice!');
+			new Notice('Updated');
 		});
 
 		this.addCommand({
 			id: "rename-title-to-selection",
 			name: "Rename Title To Selection",
 			editorCallback: (editor: Editor) => {
+				const file = app.workspace.getActiveFile();
 				const selection = editor.getSelection();
-				this.setTitle(selection);
+				const sanitizedSelection = sanitize(selection)
+				
+				if ((sanitizedSelection != null && sanitizedSelection != "") && file != null) {
+					if (selection != sanitizedSelection)
+						new Notice("Selection sanitized to create valid filename.");
+
+					// Uses name w/ extension in case path contains selection
+					const newName = file.path.replace(file.name, sanitizedSelection) + "." + file.extension;
+					app.fileManager.renameFile(file, newName);
+				}
+				else if (sanitizedSelection != null || file != null)
+				{
+					console.error("NULL ERROR:\nSelection: ", sanitizedSelection, "\nFile: ", file);
+				}
 			},
 		});
 
@@ -34,13 +49,22 @@ export default class RenameToSelectionPlugin extends Plugin {
 			name: "Rename Header To Selection",
 			editorCallback: (editor: Editor) => {
 				const selection = editor.getSelection();
-				this.setHeading(selection);
+				const sanitizedSelection = sanitize(selection)
+				
+				const file = app.workspace.getActiveFile();
+				if (file != null) {
+					const fileContent = app.vault.read(file);
+
+
+
+					//editor.replaceRange()
+				}
 			},
 		});
 
 	}
 
-	onunload() {
+	async onunload() {
 
 	}
 
