@@ -5,12 +5,13 @@ on:
     tags:
       - "*"
 
+permissions: read-all
+
 env:
   PLUGIN_NAME: obsidian-rename-file-to-selection 
 
 jobs:
   build:
-    permissions: read-all
     runs-on: ubuntu-latest
 
     steps:
