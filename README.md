@@ -1,9 +1,12 @@
-# obsidian-rename-to-selection
+# obsidian-rename-file-to-selection
 Rename your file to the current text selection.
 
 ## Commands
-### Rename Title to Selection
-Uses the current selection / highlighted text in the active document to rename the file after sanitizing it.
+### Rename File to Selection
+Uses the current selection / highlighted text in the active document to rename the active file after sanitizing it.
 
-##
-Uses [sanitize-filename-ts](https://github.com/hfour/sanitize-filename-ts) to sanitize selection for filenames.
+## Credits
+[sanitize-filename-ts](https://github.com/hfour/sanitize-filename-ts) - to sanitize selection for filenames
+
+## Donation
+If you'd like to buy me a cup of coffee, buy one of my games on [itch.io](https://aavagames.itch.io/). Cheers.

@@ -1,5 +1,5 @@
 {
-	"id": "obsidian-rename-to-selection",
+	"id": "obsidian-rename-file-to-selection",
 	"name": "Rename to Selection",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
