@@ -5,6 +5,13 @@ Rename your file to the current text selection.
 ### Rename File to Selection
 Uses the current selection / highlighted text in the active document to rename the active file after sanitizing it.
 
+## Install
+Download main.js and manifest.json and add it to a folder called "obsidian-rename-title-to-selection" in your vaults ".obsidian/plugins"
+
+### Using BRAT obsidian plugin
+1. Open BRAT and add to beta plugin
+2. Paste in the github URL (https://github.com/AavaGames/obsidian-rename-file-to-selection/)
+
 ## Credits
 [sanitize-filename-ts](https://github.com/hfour/sanitize-filename-ts) - to sanitize selection for filenames
 
