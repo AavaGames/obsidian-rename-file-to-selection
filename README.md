@@ -16,4 +16,4 @@ Download main.js and manifest.json and add it to a folder called "obsidian-renam
 [sanitize-filename-ts](https://github.com/hfour/sanitize-filename-ts) - to sanitize selection for filenames
 
 ## Donation
-If you'd like to buy me a cup of coffee, buy one of my games on [itch.io](https://aavagames.itch.io/). Cheers.
+If you'd like to buy me a cup of coffee, buy one of my games on [itch.io](https://aavagames.itch.io/). Thanks!
