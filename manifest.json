@@ -1,7 +1,7 @@
 {
 	"id": "obsidian-rename-file-to-selection",
 	"name": "Rename File to Selection",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"minAppVersion": "0.15.0",
 	"description": "Rename your file to the current text selection.",
 	"author": "Aava",

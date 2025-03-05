@@ -5,6 +5,10 @@ Rename your file to the current text selection.
 ### Rename File to Selection
 Uses the current selection / highlighted text in the active document to rename the active file after sanitizing it.
 
+## Tips
+- Add a hotkey to the command for ease of use, I use CRTL+ALT+R.
+- Use the Commander community plugin to add a command button near your file title for ease of use on mobile.
+
 ## Install
 Download main.js and manifest.json and add it to a folder called "obsidian-rename-title-to-selection" in your vaults ".obsidian/plugins"
 

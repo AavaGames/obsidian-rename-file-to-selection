@@ -7,7 +7,7 @@ export default class RenameToSelectionPlugin extends Plugin {
 			id: "rename-File-to-selection",
 			name: "Rename File To Selection",
 			editorCallback: (editor: Editor) => {
-				const file = app.workspace.getActiveFile();
+				const file = this.app.workspace.getActiveFile();
 				const selection = editor.getSelection();
 				const sanitizedSelection = sanitize(selection)
 				
@@ -17,7 +17,7 @@ export default class RenameToSelectionPlugin extends Plugin {
 
 					// Uses name w/ extension in case path contains selection
 					const newName = file.path.replace(file.name, sanitizedSelection) + "." + file.extension;
-					app.fileManager.renameFile(file, newName);
+					this.app.fileManager.renameFile(file, newName);
 				}
 				else if (sanitizedSelection != null || file != null)
 				{
