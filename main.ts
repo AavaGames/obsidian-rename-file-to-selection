@@ -5,7 +5,7 @@ export default class RenameToSelectionPlugin extends Plugin {
 	async onload() {
 		this.addCommand({
 			id: "rename-File-to-selection",
-			name: "Rename File To Selection",
+			name: "Rename file to selection",
 			editorCallback: (editor: Editor) => {
 				const file = this.app.workspace.getActiveFile();
 				const selection = editor.getSelection();
