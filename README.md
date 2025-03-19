@@ -1,4 +1,4 @@
-# obsidian-rename-file-to-selection
+# rename-file-to-selection
 Rename your file to the current text selection.
 
 ## Commands
@@ -10,7 +10,7 @@ Uses the current selection / highlighted text in the active document to rename t
 - Use the Commander community plugin to add a command button near your file title for ease of use on mobile.
 
 ## Install
-Download main.js and manifest.json and add it to a folder called "obsidian-rename-title-to-selection" in your vaults ".obsidian/plugins"
+Download main.js and manifest.json and add it to a folder called "rename-title-to-selection" in your vaults ".obsidian/plugins"
 
 ### Using BRAT obsidian plugin
 1. Open BRAT and add to beta plugin
